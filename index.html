@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Primary Meta Tags -->
+  <title>Husen Algifari | Web Developer & Data Entry</title>
+  <meta name="title" content="Husen Algifari | Web Developer & Data Entry">
+  <meta name="description"
+    content="Portfolio resmi Husen Algifari, Web Developer & Data Entry dari Universitas Teknologi Mataram. Spesialis HTML, CSS, JS, PHP, CodeIgniter 4, React JS, Flutter, dan MySQL.">
+  <meta name="keywords"
+    content="web developer, portfolio, frontend, backend, php, codeigniter, mysql, flutter, react, programmer indonesia, data entry, mataram">
+  <meta name="author" content="Husen Algifari">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Husen Algifari | Web Developer & Data Entry">
+  <meta property="og:description" content="Membangun solusi web yang fungsional, cepat, dan estetik.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Background Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===================================================================
+       1. NAVIGATION BAR — Static, clean
+       =================================================================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#home" class="nav-logo">
+          <div class="logo-badge">&lt;/&gt;</div>
+          <span>Husen<span class="logo-dot">.dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Projek</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#certificates" class="nav-link">Sertifikat</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+
+        <!-- Action Controls -->
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" title="Ganti Aksen Warna" aria-label="Ganti Tema">
+            <i class="fas fa-palette"></i>
+          </button>
+          <a href="#contact" class="nav-cta-btn">Hire Me</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="nav-link" id="mDrawerHome">Home</a></li>
+          <li><a href="#about" class="nav-link" id="mDrawerAbout">Tentang Saya</a></li>
+          <li><a href="#skills" class="nav-link" id="mDrawerSkills">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link" id="mDrawerProjects">Projek</a></li>
+          <li><a href="#experience" class="nav-link" id="mDrawerExp">Pengalaman</a></li>
+          <li><a href="#certificates" class="nav-link" id="mDrawerCerts">Sertifikat</a></li>
+          <li><a href="#campus" class="nav-link" id="mDrawerCampus">Pendidikan</a></li>
+          <li><a href="#contact" class="nav-link" id="mDrawerContact">Kontak</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         2. HERO SECTION
+         =================================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Tersedia untuk Kerja Penuh Waktu &amp; Freelance</span>
+          </div>
+
+          <p class="hero-greeting">Hello World, I'm</p>
+          <h1 class="hero-name">
+            <span class="gradient-text">Husen Algifari</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span>Saya seorang&nbsp;</span>
+            <span class="typed-text"></span>
+          </div>
+
+          <p class="hero-motto">
+            <strong>"Membangun solusi web yang fungsional, cepat, dan estetik."</strong>
+            Berfokus pada pengembangan web, data entry, dan pengalaman pengguna yang menyenangkan.
+          </p>
+
+          <div class="hero-campus-badge">
+            <i class="fas fa-university"></i>
+            <span>S1 Teknik Informatika &bull; <strong>Universitas Teknologi Mataram</strong></span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroViewProjects">
+              <i class="fas fa-laptop-code"></i> Lihat Projek
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="heroContact">
+              <i class="fas fa-envelope"></i> Hubungi Saya
+            </a>
+            <a href="mailto:husenalgifari844@gmail.com?subject=Permintaan%20CV%20Husen%20Algifari"
+              class="btn btn-secondary" id="heroDownloadCV">
+              <i class="fas fa-file-alt"></i> Minta CV
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/husenalgifari" target="_blank" rel="noopener noreferrer"
+              class="social-icon" title="LinkedIn" id="socialLinkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/husen.algif4ri_" target="_blank" rel="noopener noreferrer"
+              class="social-icon" title="Instagram" id="socialInstagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:husenalgifari844@gmail.com" class="social-icon" title="Email" id="socialEmail">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-backdrop-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-img-box">
+                <img src="assets/images/husen.png" alt="Foto Profil Husen Algifari" class="avatar-img" width="300"
+                  height="300">
+              </div>
+              <div class="floating-badge badge-top-left">
+                <span class="badge-icon">💡</span>
+                <span>Web Developer</span>
+              </div>
+              <div class="floating-badge badge-bottom-right">
+                <span class="badge-icon">⚡</span>
+                <span>Data Entry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. ABOUT ME SECTION
+         =================================================================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tentang Diri Saya</span>
+          <h2 class="section-title">Pengembangan Web &amp; Data</h2>
+          <p class="section-desc">Mahasiswa Teknik Informatika Universitas Teknologi Mataram yang fokus pada pembuatan
+            aplikasi web responsif dan pengelolaan data terstruktur.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Story -->
+          <div class="about-story-card">
+            <div class="about-role-pills">
+              <span class="role-pill"><i class="fas fa-code"></i> Web Developer</span>
+              <span class="role-pill pill-alt"><i class="fas fa-table"></i> Data Entry</span>
+            </div>
+            <h3 class="about-story-title">Membangun Web, Mengolah Data,<br>Menghadirkan Solusi Nyata</h3>
+            <p class="about-bio">
+              Saya adalah mahasiswa Teknik Informatika di Universitas Teknologi Mataram dengan antusiasme tinggi untuk
+              terus belajar dan mengeksplorasi teknologi baru.
+            </p>
+            <p class="about-bio">
+              Saat ini saya berfokus pada Web Development dan Data Entry, serta telah
+              menyelesaikan berbagai proyek yang mengasah keterampilan pembuatan antarmuka modern, pemrosesan basis
+              data, dan akurasi tinggi dalam pengelolaan berkas Microsoft Office (Excel, Word, PowerPoint).
+            </p>
+            <div class="about-quick-facts">
+              <div class="fact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Lombok / Mataram, Nusa Tenggara Barat</span>
+              </div>
+              <div class="fact-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Universitas Teknologi Mataram (2022 - 2026)</span>
+              </div>
+              <div class="fact-item">
+                <i class="fas fa-language"></i>
+                <span>Indonesia (Native), English (Dasar)</span>
+              </div>
+              <div class="fact-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Status: Terbuka untuk Magang &bull; Freelance &bull; Full-time</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Stats + Values -->
+          <div class="about-right-col">
+
+
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon" style="color:#8b5cf6; background:rgba(139,92,246,0.12);">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="value-text">
+                  <h5>Kode Bersih &amp; Efisien</h5>
+                  <p>Menulis kode yang terstruktur, mudah dibaca, dan mudah dikembangkan.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" style="color:#06b6d4; background:rgba(6,182,212,0.12);">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="value-text">
+                  <h5>Responsif di Semua Perangkat</h5>
+                  <p>Setiap tampilan dioptimalkan untuk HP, tablet, dan desktop.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" style="color:#10b981; background:rgba(16,185,129,0.12);">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="value-text">
+                  <h5>Data Akurat &amp; Terorganisir</h5>
+                  <p>Mengolah data dengan teliti menggunakan tools Ms Office.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. PENDIDIKAN & KAMPUS SECTION
+         =================================================================== -->
+    <section class="campus" id="campus">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Latar Belakang Pendidikan</span>
+          <h2 class="section-title">Pendidikan &amp; Kampus</h2>
+          <p class="section-desc">Fondasi akademis sebagai landasan pengembangan karir di bidang teknologi.
+          </p>
+        </div>
+
+        <div class="campus-feature-card">
+          <div class="campus-grid">
+            <div class="campus-logo-badge"
+              style="background: rgba(255,255,255,0.05); padding: 6px; border: 1px solid var(--border-glow); display: flex; align-items: center; justify-content: center;">
+              <img src="assets/images/utm.png" alt="Logo Universitas Teknologi Mataram"
+                style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div class="campus-title-box">
+              <h3>Universitas Teknologi Mataram</h3>
+              <div class="campus-degree">Sarjana Teknik Informatika (S1)</div>
+              <div class="campus-meta">
+                <span><i class="fas fa-calendar-alt"></i> Oktober 2022 – Oktober 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> Mataram, Nusa Tenggara Barat</span>
+                <span><i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i> Lulus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-achievements">
+            <div class="achievement-pill">
+              <i class="fas fa-laptop-code"></i>
+              <div>
+                <strong style="color: #fff; display: block;">Web Development &amp; Full-Stack</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Fokus mendalam pada pembuatan website
+                  berbasis PHP, CodeIgniter 4, MySQL, JavaScript, dan Bootstrap.</span>
+              </div>
+            </div>
+            <div class="achievement-pill">
+              <i class="fas fa-database"></i>
+              <div>
+                <strong style="color: #fff; display: block;">Data Entry &amp; Olah Dokumen</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Mengolah dan menyusun data dengan akurasi
+                  tinggi menggunakan Microsoft Excel, Word, dan PowerPoint.</span>
+              </div>
+            </div>
+            <div class="achievement-pill">
+              <i class="fas fa-mobile-alt"></i>
+              <div>
+                <strong style="color: #fff; display: block;">Mobile App Development</strong>
+                <span style="color: var(--text-muted); font-size: 0.8rem;">Membangun aplikasi mobile multiplatform
+                  dengan framework Flutter dan bahasa pemrograman Dart.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. SKILLS SECTION
+         =================================================================== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Keahlian Teknis</span>
+          <h2 class="section-title">Tech Stack &amp; Kompetensi</h2>
+          <p class="section-desc">Bahasa pemrograman, framework, basis data, dan tools produktivitas.
+          </p>
+        </div>
+
+        <div class="skills-tabs">
+          <button class="skill-tab-btn active" data-category="all">Semua</button>
+          <button class="skill-tab-btn" data-category="frontend">Frontend &amp; Mobile</button>
+          <button class="skill-tab-btn" data-category="backend">Backend &amp; Database</button>
+          <button class="skill-tab-btn" data-category="tools">Office &amp; Tools</button>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-grid">
+            <!-- HTML -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #f97316;"><i class="fab fa-html5"></i></div>
+                  <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-pct">90%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="90%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Semantic HTML</span>
+                <span class="skill-mini-tag">SEO Friendly</span>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #3b82f6;"><i class="fab fa-css3-alt"></i></div>
+                  <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-pct">88%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="88%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Flexbox/Grid</span>
+                <span class="skill-mini-tag">Animasi</span>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #f59e0b;"><i class="fab fa-js-square"></i></div>
+                  <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-pct">80%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="80%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">ES6+</span>
+                <span class="skill-mini-tag">DOM API</span>
+              </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #8b5cf6;"><i class="fab fa-bootstrap"></i></div>
+                  <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-pct">85%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="85%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Bootstrap 5</span>
+                <span class="skill-mini-tag">Komponen</span>
+              </div>
+            </div>
+
+            <!-- React JS -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #06b6d4;"><i class="fab fa-react"></i></div>
+                  <div class="skill-name">React JS</div>
+                </div>
+                <div class="skill-pct">72%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="72%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Hooks</span>
+                <span class="skill-mini-tag">Components</span>
+              </div>
+            </div>
+
+            <!-- Flutter & Dart -->
+            <div class="skill-card" data-category="frontend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #38bdf8;"><i class="fas fa-mobile-alt"></i></div>
+                  <div class="skill-name">Flutter &amp; Dart</div>
+                </div>
+                <div class="skill-pct">65%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="65%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Cross-Platform</span>
+                <span class="skill-mini-tag">Widgets</span>
+              </div>
+            </div>
+
+            <!-- PHP -->
+            <div class="skill-card" data-category="backend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #818cf8;"><i class="fab fa-php"></i></div>
+                  <div class="skill-name">PHP</div>
+                </div>
+                <div class="skill-pct">82%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="82%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">OOP</span>
+                <span class="skill-mini-tag">REST API</span>
+              </div>
+            </div>
+
+            <!-- CodeIgniter 4 -->
+            <div class="skill-card" data-category="backend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #ef4444;"><i class="fas fa-fire"></i></div>
+                  <div class="skill-name">CodeIgniter 4</div>
+                </div>
+                <div class="skill-pct">80%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="80%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">MVC</span>
+                <span class="skill-mini-tag">Routing</span>
+              </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-card" data-category="backend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #3b82f6;"><i class="fas fa-database"></i></div>
+                  <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-pct">83%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="83%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Query</span>
+                <span class="skill-mini-tag">Relasi Tabel</span>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card" data-category="backend">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #eab308;"><i class="fab fa-python"></i></div>
+                  <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-pct">70%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="70%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Scripting</span>
+                <span class="skill-mini-tag">Automation</span>
+              </div>
+            </div>
+
+            <!-- MS Word -->
+            <div class="skill-card" data-category="tools">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #3b82f6;"><i class="fas fa-file-word"></i></div>
+                  <div class="skill-name">Microsoft Word</div>
+                </div>
+                <div class="skill-pct">90%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="90%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Dokumen</span>
+                <span class="skill-mini-tag">Laporan</span>
+              </div>
+            </div>
+
+            <!-- MS Excel -->
+            <div class="skill-card" data-category="tools">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #22c55e;"><i class="fas fa-file-excel"></i></div>
+                  <div class="skill-name">Microsoft Excel</div>
+                </div>
+                <div class="skill-pct">88%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="88%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Formula</span>
+                <span class="skill-mini-tag">Data Entry</span>
+              </div>
+            </div>
+
+            <!-- PowerPoint -->
+            <div class="skill-card" data-category="tools">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #f97316;"><i class="fas fa-file-powerpoint"></i></div>
+                  <div class="skill-name">Microsoft PowerPoint</div>
+                </div>
+                <div class="skill-pct">85%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="85%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Presentasi</span>
+                <span class="skill-mini-tag">Desain Slide</span>
+              </div>
+            </div>
+
+            <!-- Photoshop -->
+            <div class="skill-card" data-category="tools">
+              <div class="skill-header">
+                <div class="skill-title-group">
+                  <div class="skill-icon-wrap" style="color: #60a5fa;"><i class="fas fa-image"></i></div>
+                  <div class="skill-name">Adobe Photoshop</div>
+                </div>
+                <div class="skill-pct">75%</div>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-fill="75%"></div>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-mini-tag">Editing Foto</span>
+                <span class="skill-mini-tag">Desain Grafis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. FEATURED PROJECTS SECTION
+         =================================================================== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio Projek</span>
+          <h2 class="section-title">Hasil Karya &amp; Implementasi</h2>
+          <p class="section-desc">Koleksi aplikasi web dan mobile simple yang telah saya kembangkan.</p>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Semua (5)</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack (2)</button>
+          <button class="filter-btn" data-filter="frontend">Frontend (1)</button>
+          <button class="filter-btn" data-filter="mobile">Mobile App (1)</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 1. POS On Coffee -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <span class="project-category-badge">Full-Stack Web</span>
+              <img src="assets/images/oncoffee.png" alt="Point Of Sale On Coffee" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-project-id="pos_coffee" title="Detail Projek"><i
+                    class="fas fa-info"></i></button>
+                <button class="overlay-btn" data-gallery-key="pos_coffee" title="Perbesar Layar"><i
+                    class="fas fa-search-plus"></i></button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Point Of Sale On Coffee</h3>
+              <p class="project-desc">Sistem Point of Sale (POS) On Coffee Space ini dikembangkan menggunakan PHP dan
+                MySQL untuk mengoptimalkan transaksi kasir serta manajemen stok secara real-time. Platform berbasis web
+                ini sudah terintegrasi dengan payment gateway untuk mendukung pembayaran non-tunai, sekaligus menyajikan
+                laporan penjualan harian secara otomatis dan akurat.</p>
+
+              <div class="project-footer">
+                <button class="project-details-btn" data-project-id="pos_coffee">
+                  Detail <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="project-details-btn cert-preview-trigger" data-gallery-key="pos_coffee"
+                  style="margin-left: auto;">
+                  <i class="fas fa-images"></i> Galeri
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Aplikasi Dapur Pintar -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-img-wrapper">
+              <span class="project-category-badge"
+                style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); color: var(--accent-emerald);">Mobile
+                Application</span>
+              <img src="assets/images/dapurpintar.png" alt="Aplikasi Dapur Pintar" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-project-id="dapur_pintar" title="Detail Projek"><i
+                    class="fas fa-info"></i></button>
+                <button class="overlay-btn" data-gallery-key="dapur_pintar" title="Lihat 5 Tangkapan Layar"><i
+                    class="fas fa-images"></i></button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aplikasi Dapur Pintar (Resep Masakan)</h3>
+              <p class="project-desc">Aplikasi Dapur Pintar ini dikembangkan sebagai tugas akhir. Platform ini dirancang
+                untuk memudahkan pencarian resep masakan, menggunakan Flutter sebagai framework untuk membangun
+                antarmuka yang responsif dan menarik. Aplikasi terintegrasi dengan API backend RESTful yang mengelola
+                data resep secara dinamis, mencakup fitur penambahan, pengeditan, dan penghapusan resep.</p>
+
+              <div class="project-footer">
+                <button class="project-details-btn" data-project-id="dapur_pintar">
+                  Detail <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="project-details-btn cert-preview-trigger" data-gallery-key="dapur_pintar">
+                  <i class="fas fa-images"></i> 5 Foto
+                </button>
+                <!-- <a href="https://www.mediafire.com/file/jjhk6xk58b6rfas/dapur_pintar.apk/file" target="_blank"
+                  rel="noopener noreferrer" class="project-link-btn">
+                  APK <i class="fas fa-download"></i>
+                </a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Website Goa Lawah -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-img-wrapper">
+              <span class="project-category-badge">Full-Stack Web</span>
+              <img src="assets/images/goalawah.png" alt="Website Goa Lawah" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-project-id="goa_lawah" title="Detail Projek"><i
+                    class="fas fa-info"></i></button>
+                <button class="overlay-btn" data-gallery-key="goa_lawah" title="Lihat 9 Tangkapan Layar"><i
+                    class="fas fa-images"></i></button>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Pemesanan Tiket Goa Lawah</h3>
+              <p class="project-desc">Website Pemesanan Tiket Goa Lawah ini dikembangkan sebagai bagian dari
+                penyelesaian tugas penelitian. Proyek ini dibuat menggunakan PHP dengan basis data MySQL, serta didukung
+                HTML, CSS, dan JavaScript untuk menghadirkan pengalaman pengguna yang interaktif dan responsif dalam
+                alur reservasi tiket, konfirmasi pembayaran, serta pencetakan bukti tiket digital.</p>
+
+              <div class="project-footer">
+                <button class="project-details-btn" data-project-id="goa_lawah">
+                  Detail <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="project-details-btn cert-preview-trigger" data-gallery-key="goa_lawah"
+                  style="margin-left: auto;">
+                  <i class="fas fa-images"></i> 9 Foto Layar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Web Photobooth -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-img-wrapper">
+              <span class="project-category-badge"
+                style="background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.35); color: var(--accent-secondary);">Frontend
+                Web</span>
+              <img src="assets/images/photobooth.png" alt="Web Photobooth" class="project-img">
+              <div class="project-overlay">
+                <button class="overlay-btn" data-project-id="photobooth" title="Detail Projek"><i
+                    class="fas fa-info"></i></button>
+                <a href="https://hycen-photobooth.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="overlay-btn" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Web Photobooth Interactive</h3>
+              <p class="project-desc">Website Photobooth ini dikembangkan menggunakan HTML, CSS, dan JavaScript.
+                Antarmuka yang simpel membuatnya mudah digunakan oleh siapa saja untuk mengambil foto dan mengabadikan
+                momen langsung melalui peramban web dengan dukungan kamera web secara instan.</p>
+
+              <div class="project-footer">
+                <button class="project-details-btn" data-project-id="photobooth">
+                  Detail <i class="fas fa-arrow-right"></i>
+                </button>
+                <!-- <a href="https://hycen-photobooth.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn">
+                  Live Demo <i class="fas fa-external-link-alt"></i>
+                </a> -->
+              </div>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. PENGALAMAN SECTION
+         =================================================================== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pengalaman Kerja &amp; Magang</span>
+          <h2 class="section-title">Pengalaman Industri</h2>
+          <p class="section-desc">Pernah bertugas di instansi pemerintahan untuk urusan administrasi dan operasional
+            metrologi.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="experience-instansi-header">
+                <img src="assets/images/loteng.png" alt="Logo Lombok Tengah" class="experience-instansi-logo">
+                <div class="experience-instansi-meta">
+                  <h3>Dinas Perindustrian dan Perdagangan Kabupaten Lombok Tengah</h3>
+                  <p>
+                    <span><i class="fas fa-briefcase"></i> Magang &bull; 4 Bulan</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Praya, Lombok Tengah, Nusa Tenggara Barat &bull; Di
+                      Lokasi</span>
+                  </p>
+                </div>
+                <div class="timeline-date-badge" style="margin-left: auto;">Jun 2021 – Sep 2021</div>
+              </div>
+
+              <div class="experience-subtimeline">
+                <div class="timeline-subitem">
+                  <div class="timeline-subdot"></div>
+                  <h4>Asisten Administrasi</h4>
+                  <div class="subitem-period">Jun 2021 – Sep 2021 &bull; 4 Bulan</div>
+                  <p>
+                    Mendukung kegiatan administrasi di Bidang Metrologi Legal.
+                  </p>
+                </div>
+
+                <div class="timeline-subitem">
+                  <div class="timeline-subdot"></div>
+                  <h4>Operasional Metrologi Legal</h4>
+                  <div class="subitem-period">Agu 2021 – Sep 2021 &bull; 2 Bulan</div>
+                  <p>
+                    Mendukung kegiatan operasional lapangan di Bidang Metrologi Legal, termasuk keterlibatan langsung
+                    dalam pemeriksaan teknis dan tera ulang pompa ukur bahan bakar minyak (PUBBM) di berbagai SPBU
+                    Kabupaten Lombok Tengah untuk memastikan akurasi takaran serta kepatuhan terhadap standar pengukuran
+                    nasional (UTTP).
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. CERTIFICATES SECTION
+         =================================================================== -->
+    <section class="certificates" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sertifikasi &amp; Lisensi</span>
+          <h2 class="section-title">Lisensi &amp; Kompetensi</h2>
+          <p class="section-desc">Sertifikat kelulusan dari beberapa kelas dan program pelatihan teknologi yang pernah
+            saya ikuti.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="cert-filter-bar">
+          <button class="cert-filter-btn active" data-filter="all">Semua (15)</button>
+          <button class="cert-filter-btn" data-filter="frontend">Web &amp; Frontend (8)</button>
+          <button class="cert-filter-btn" data-filter="data">Data &amp; AI (5)</button>
+          <button class="cert-filter-btn" data-filter="office">Office &amp; Marketing (1)</button>
+          <button class="cert-filter-btn" data-filter="cloud">Cloud Computing (1)</button>
+        </div>
+
+        <div class="certs-grid">
+          <!-- 1. IDCamp AI Front-End -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #ec4899;"><i class="fas fa-robot"></i></div>
+                <div>
+                  <div class="cert-issuer-name">IDCamp Indosat Ooredoo</div>
+                  <div class="cert-issuer-org">Diterbitkan Maret 2026</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/Sertifikat IDCamp 2025 (Husen Algifari).png"
+                alt="Sertifikat AI Front-End Developer" class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Certificate AI Front-End Developer</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>IDCAMP2025/L2-FE-095</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_idcamp"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://drive.google.com/file/d/12dvehNpL7hju3mywOazVI7MU2ynTKKBj/view?usp=drive_link"
+                target="_blank" rel="noopener noreferrer" class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Dicoding Fundamental Frontend -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #10b981;"><i class="fas fa-code"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Februari 2026</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/funda.jpg" alt="Certificate Fundamental Front-End Web Development"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Fundamental Front-End Web Development</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>2VX301W1JXYQ</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_funda"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.dicoding.com/certificates/2VX301W1JXYQ" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Sololearn Web Development -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #3b82f6;"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Sololearn</div>
+                  <div class="cert-issuer-org">Diterbitkan September 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/Web Development Certificate.jpg" alt="Certificate Web Development"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Certificate Web Development</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>CC-HKIEQ4KE</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_webdev"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.sololearn.com/en/certificates/CC-HKIEQ4KE" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Future Skills Excel -->
+          <div class="cert-card" data-category="office">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #22c55e;"><i class="fas fa-file-excel"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Future Skills Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Agustus 2025</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/serti_excel.jpg" alt="Penggunaan Ms Excel Untuk Mengelola Pendataan"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Microsoft Excel Untuk Mengelola Pendataan</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>088168/098/FCC/25ID</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_excel"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://futureskills.id/fs/sertifikat/verifikasi/eyJpdiI6IkMvVTRQVDEzQ2NweG12R3hIVmdNeEE9PSIsInZhbHVlIjoiWDVST0wxMUNSU2RabllUcElpREdrZz09IiwibWFjIjoiOTU2MzkzZTI5YjZlZjJjNTI2NWQ0Yjk1YTcyMjEyMjU5ZWM4NmI1NGI5NDY2MTllYzY0N2JjMjQ3ZTVlNWEyZCIsInRhZyI6IiJ9"
+                target="_blank" rel="noopener noreferrer" class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. dibimbing.id Frontend -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #8b5cf6;"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                  <div class="cert-issuer-name">dibimbing.id</div>
+                  <div class="cert-issuer-org">Diterbitkan September 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/Certificate Front End Developer.jpg"
+                alt="Certificate Frontend developer dibimbing" class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Certificate Frontend Developer</h3>
+            <div class="cert-credential-info">
+              <div><span>Pelatihan:</span> <strong>Digital Skill Fair</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_dibimbing"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://dibimbing-lms-dev.s3.ap-southeast-1.amazonaws.com/production/digital-skill-fair/2e377d95-398e-4b90-a07d-80d9b3fec4b7.pdf"
+                target="_blank" rel="noopener noreferrer" class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Dicoding Dasar JavaScript -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #f59e0b;"><i class="fab fa-js-square"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan September 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/sadar js.png" alt="Belajar Dasar Pemrograman JavaScript"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Belajar Dasar Pemrograman JavaScript</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>JMZV42EEJXN9</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_js"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.dicoding.com/certificates/JMZV42EEJXN9" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Future Skills Komputasi Awan -->
+          <div class="cert-card" data-category="cloud">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #06b6d4;"><i class="fas fa-cloud"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Future Skills Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Agustus 2025</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/excel.jpg" alt="Belajar Dasar-Dasar Komputasi Awan"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Dasar-Dasar Komputasi Awan (Cloud)</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>088168/098/FCC/25</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_cloud"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://futureskills.id/fs/sertifikat/verifikasi/eyJpdiI6Ijh5VUNnL3dHV1NnekE0K1paT3NCTUE9PSIsInZhbHVlIjoicXVXYThGZEtxQzc5enYyTUpPR2ZIQT09IiwibWFjIjoiMWJmOGIxZjg4ZGFiMTdmMDdjMGQ0NTE4MDk5MGZiM2FiYmE4YzEwODY5YzkxZmRlZGU2NDU2MDI3MzdjNTZhYSIsInRhZyI6IiJ9"
+                target="_blank" rel="noopener noreferrer" class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. Sololearn Coding Foundations -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #3b82f6;"><i class="fas fa-terminal"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Sololearn</div>
+                  <div class="cert-issuer-org">Diterbitkan September 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/Coding Foundations Certificate.jpg"
+                alt="Certificate Coding Foundations" class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Certificate Coding Foundations</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>CC-JIKSIBNQ</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_coding_found"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://www.sololearn.com/certificates/CC-JIKSIBNQ" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 9. Dicoding Dasar Pemrograman Web -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #10b981;"><i class="fab fa-html5"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan September 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/dasar web.png" alt="Belajar Dasar Pemrograman Web"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Belajar Dasar Pemrograman Web</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>GRX54KLMRP0M</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_dasar_web"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://www.dicoding.com/certificates/GRX54KLMRP0M" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 10. Dicoding Front-End Pemula -->
+          <div class="cert-card" data-category="frontend">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #10b981;"><i class="fas fa-layer-group"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan November 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/front newbe.png" alt="Belajar Membuat Front-End Web untuk Pemula"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Membuat Front-End Web untuk Pemula</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>1RXY2JRE1XVM</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_fe_pemula"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://www.dicoding.com/certificates/1RXY2JRE1XVM" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 11. Dicoding Dasar AI -->
+          <div class="cert-card" data-category="data">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #8b5cf6;"><i class="fas fa-brain"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan November 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/ai.png" alt="Belajar Dasar AI" class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Belajar Dasar AI (Artificial Intelligence)</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>2VX34E71JZYQ</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_ai"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.dicoding.com/certificates/2VX34E71JZYQ" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 12. Dicoding Dasar SQL -->
+          <div class="cert-card" data-category="data">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #06b6d4;"><i class="fas fa-database"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Februari 2025</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/sql.png" alt="Belajar Dasar Structured Query Language (SQL)"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Dasar Structured Query Language (SQL)</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>GRX53O1LVZ0M</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_sql"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.dicoding.com/certificates/GRX53O1LVZ0M" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 13. Dicoding Python -->
+          <div class="cert-card" data-category="data">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #eab308;"><i class="fab fa-python"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Desember 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/python.png" alt="Memulai Pemrograman dengan Python"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Memulai Pemrograman dengan Python</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>KEXLYKY2RZG2</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_python"><i class="fas fa-info-circle"></i> Detail</button>
+              <a href="https://www.dicoding.com/certificates/KEXLYKY2RZG2" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 14. Dicoding Visualisasi Data -->
+          <div class="cert-card" data-category="data">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #ec4899;"><i class="fas fa-chart-pie"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Desember 2024</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/visualisasi data.png" alt="Belajar Dasar Visualisasi Data"
+                class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Belajar Dasar Visualisasi Data</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>L4PQ505YVZO1</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_visualisasi"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://www.dicoding.com/certificates/L4PQ505YVZO1" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+          <!-- 15. Dicoding Data Science -->
+          <div class="cert-card" data-category="data">
+            <div class="cert-top">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon" style="color: #10b981;"><i class="fas fa-chart-line"></i></div>
+                <div>
+                  <div class="cert-issuer-name">Dicoding Indonesia</div>
+                  <div class="cert-issuer-org">Diterbitkan Februari 2025</div>
+                </div>
+              </div>
+              <!-- <div class="cert-verified-pill"><i class="fas fa-check-circle"></i> Terverifikasi</div> -->
+            </div>
+            <div class="cert-img-wrapper" title="Klik untuk memperbesar sertifikat">
+              <img src="assets/images/certificates/sciense.png" alt="Belajar Dasar Data Science" class="cert-image">
+              <div class="cert-img-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Klik untuk Memperbesar</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Belajar Dasar Data Science</h3>
+            <div class="cert-credential-info">
+              <div><span>ID Kredensial:</span> <strong>JMZVEDK9NPN9</strong></div>
+            </div>
+            <div class="cert-footer">
+              <button class="cert-view-btn" data-cert-id="c_datascience"><i class="fas fa-info-circle"></i>
+                Detail</button>
+              <a href="https://www.dicoding.com/certificates/JMZVEDK9NPN9" target="_blank" rel="noopener noreferrer"
+                class="cert-view-btn cert-preview-trigger">
+                <i class="fas fa-external-link-alt"></i> Kredensial
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Toggle Button for Expand / Collapse -->
+        <div class="cert-toggle-wrap">
+          <button class="cert-toggle-btn" id="certToggleBtn">
+            <i class="fas fa-chevron-down"></i> Tampilkan Semua (16) Sertifikat
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. CONTACT SECTION
+         =================================================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mari Terhubung</span>
+          <!-- <h2 class="section-title">Mulai Diskusi &amp; Kerjasama</h2>
+          <p class="section-desc">Punya ide proyek, tawaran kerja, atau ingin berdiskusi? Saya selalu terbuka!</p> -->
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Nama Lengkap *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Masukkan nama Anda" required>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Alamat Email *</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="nama@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="messageSubject" class="form-label">Subjek</label>
+                <input type="text" id="messageSubject" class="form-input" placeholder="Tawaran Proyek / Kerja Sama">
+              </div>
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Pesan Anda *</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Ceritakan kebutuhan Anda..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn" id="submitBtn">
+                <i class="fas fa-paper-plane"></i> Kirim Pesan
+              </button>
+            </form>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-title-group">
+              <h3
+                style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem;">
+                Kontak Langsung</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Silakan hubungi saya
+                melalui email atau sosial media untuk kolaborasi proyek atau tawaran kerja.</p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-left">
+                  <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="method-text">
+                    <span>Email Utama</span>
+                    <strong>husenalgifari844@gmail.com</strong>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="husenalgifari844@gmail.com" title="Salin Email">
+                  <i class="far fa-copy"></i> Salin
+                </button>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-left">
+                  <div class="method-icon" style="color: #0a66c2; background: rgba(10, 102, 194, 0.15);">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div class="method-text">
+                    <span>LinkedIn</span>
+                    <strong>linkedin.com/in/husenalgifari</strong>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/husenalgifari" target="_blank" rel="noopener noreferrer"
+                  class="action-link-btn" title="Kunjungi Profil">
+                  <i class="fas fa-external-link-alt"></i> Buka
+                </a>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-left">
+                  <div class="method-icon" style="color: #e1306c; background: rgba(225, 48, 108, 0.15);">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="method-text">
+                    <span>Instagram</span>
+                    <strong>@husen.algif4ri_</strong>
+                  </div>
+                </div>
+                <a href="https://www.instagram.com/husen.algif4ri_" target="_blank" rel="noopener noreferrer"
+                  class="action-link-btn" title="Kunjungi Profil">
+                  <i class="fas fa-external-link-alt"></i> Buka
+                </a>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-left">
+                  <div class="method-icon" style="color: #ec4899; background: rgba(236,72,153,0.15);">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-text">
+                    <span>Domisili</span>
+                    <strong>Lombok / Mataram, Nusa Tenggara Barat</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Modal -->
+  <div class="modal-backdrop" id="globalModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="logo-badge">&lt;/&gt;</div>
+            <span>Husen<span class="logo-dot">.dev</span></span>
+          </a>
+          <p>Portfolio digital resmi Husen Algifari, Web Developer. Lulusan Mahasiswa Teknik Informatika
+            Universitas Teknologi Mataram.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#campus">Pendidikan</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#certificates">Sertifikat</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sosial Media</h4>
+          <ul class="footer-nav">
+            <li><a href="https://linkedin.com/in/husenalgifari" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-linkedin"></i>
+                LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/husen.algif4ri_" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:husenalgifari844@gmail.com"><i class="fas fa-envelope"></i>
+                Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>Husen Algifari</strong>. Seluruh hak cipta dilindungi.</div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="#home" class="back-to-top" title="Kembali ke Atas" aria-label="Kembali ke atas">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
